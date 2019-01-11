@@ -3,10 +3,9 @@ import time
 import concurrent.futures
 
 
-def hold(sec):
-    print(f'Running for {sec} seconds')
-    time.sleep(sec)
-    return sec
+def hold(n):
+    print(f'Running task number {n}')
+    return n
 
 
 async def main():
